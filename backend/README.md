@@ -3,9 +3,9 @@
 URL Shortener Project (Backend)
 Node JS + TypeScript + Express + Postgres
 
-### How To
+## How To
 
-* Criar projeto NodeJs com TypeScript
+### Criar projeto NodeJs com TypeScript
 
 ```
   $ mkdir pasta-projeto
@@ -16,13 +16,15 @@ Node JS + TypeScript + Express + Postgres
   $ yarn tsc --init
 ```
 
-Configurar tsconfig.json
+###Configurar tsconfig.json
+
 ```
     "outDir": "./dist",
     "rootDir": "./src",
 ```
 
-Configurar script no package.json
+### Configurar script no package.json
+
   ```
     "scripts": {
     "start": "tsc && node ./dist/server.js",
@@ -32,28 +34,31 @@ Configurar script no package.json
 
 ## More tips
 
-Padronizar projeto
+### Project normalize
 
-  * Instalar plugin "EditorConfig for VS Code"
-  * Botão direito na pasta do projeto e escolher "Generate .editorconfig"
+  * Install plugin "EditorConfig for VS Code"
+    * Right button in folder project and choice "Generate .editorconfig"
+    * Edit file .editorconfig
 
-  ```
-  root = true
+    ```
+    root = true
 
-  [*]
-  indent_style = space
-  indent_size = 2
-  charset = utf-8
-  trim_trailing_whitespace = true
-  insert_final_newline = true
-  end_of_line = lf
-  ```
+    [*]
+    indent_style = space
+    indent_size = 2
+    charset = utf-8
+    trim_trailing_whitespace = true
+    insert_final_newline = true
+    end_of_line = lf
+    ```
 
-Instalar plugin "ESLint"
+### Install "ESLint" plugin
 
 ```
-$ yarn add eslint -D
+  $ yarn add eslint -D
+```
 
+```
 $ yarn eslint --init
     ? How would you like to use ESLint? To check syntax, find problems, and enforce code style
     ? What type of modules does your project use? JavaScript modules (import/export)
@@ -67,14 +72,16 @@ $ yarn eslint --init
 
 ```
 
-Criar .eslintigonore
+### Create file .eslintigonore
+
   ```
-  /*.js
-  node_modules
-  dist
+    /*.js
+    node_modules
+    dist
   ```
 
-Atualizar settings.json
+### Update settings.json
+
 ```
     "[javascript]": {
         "editor.codeActionsOnSave": {
@@ -98,11 +105,13 @@ Atualizar settings.json
     },
 ```
 
-Prettier
+### Install Prettier
 
+```
   $ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+```
 
-  Configurar .eslintrc.json
+### Configure file .eslintrc.json
   ```
     ...
     "extends": [
@@ -135,8 +144,9 @@ Prettier
   }
   ```
 
-Criar prettier.config.js
-	```
+### Create file prettier.config.js
+
+  ```
   module.exports = {
 		singleQuote: true,
 		trailingComma: "all",
