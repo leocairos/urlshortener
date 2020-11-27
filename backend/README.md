@@ -5,7 +5,7 @@ Node JS + TypeScript + Express + Postgres
 
 ## How To
 
-### Criar projeto NodeJs com TypeScript
+### Create a project NodeJs with TypeScript
 
 ```
   $ mkdir pasta-projeto
@@ -16,14 +16,14 @@ Node JS + TypeScript + Express + Postgres
   $ yarn tsc --init
 ```
 
-###Configurar tsconfig.json
+### Configure tsconfig.json
 
 ```
     "outDir": "./dist",
     "rootDir": "./src",
 ```
 
-### Configurar script no package.json
+### Configure script in package.json
 
   ```
     "scripts": {
