@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.2.0"
+  }
+}
