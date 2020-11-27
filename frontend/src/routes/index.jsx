@@ -5,7 +5,7 @@ import HomePage from '../pages/HomePage';
 import RedirectPage from '../pages/RedirectPage';
 import StatsPage from '../pages/StatsPage';
 
-function Routes() {
+const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -15,6 +15,6 @@ function Routes() {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default Routes;
