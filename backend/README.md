@@ -1,11 +1,7 @@
 # URL SHORTENER
 
 URL Shortener Project (Backend)
-
-
-## Backend
-
-* Node JS + TypeScript + Express + MySQL
+Node JS + TypeScript + Express + Postgres
 
 ### How To
 
@@ -34,11 +30,7 @@ Configurar script no package.json
   },
   ```
 
-## Frontend
-
-* React JS
-
-## More Hints
+## More tips
 
 Padronizar projeto
 
@@ -71,10 +63,7 @@ $ yarn eslint --init
     ? How would you like to define a style for your project? Use a popular style guide
     ? Which style guide do you want to follow? Airbnb: https://github.com/airbnb/javascript
     ? What format do you want your config file to be in? JSON
-    ? Would you like to install them now with npm? No
-
-$ yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
-
+    ? Would you like to install them now with npm? Yes
 
 ```
 
