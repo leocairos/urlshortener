@@ -21,6 +21,8 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/no-unused-state": "warn",
+    "no-unused-vars": "warn"
   }
 }
