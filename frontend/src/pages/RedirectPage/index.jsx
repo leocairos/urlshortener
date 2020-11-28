@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../components/Header';
 import ShortenerService from '../../services/shortenerService';
+import validURL from '../../services/util';
 
 import { StatsContainer } from './styles';
 import Adsense from '../../components/Adsense';
@@ -32,7 +33,11 @@ class RedirectPage extends React.Component {
       const service = new ShortenerService();
       const { url } = await service.getLink(code);
 
-      window.location = url;
+      if (validURL(`http://${url}`)) {
+        (window.location = `http://${url}`)
+      } else {
+        (window.location = url)
+      }
       this.setState({ isLoading: false });
     } catch (error) {
       this.setState({
