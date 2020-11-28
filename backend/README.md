@@ -1,7 +1,8 @@
 # URL SHORTENER
 
 URL Shortener Project (Backend)
-Node JS + TypeScript + Express + Postgres
+
+Node JS + TypeScript + Express + Postgres/MySQL by Sequelize
 
 ## How To
 
