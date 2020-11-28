@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./dist/server.js",
+    "dev:serverwin": "SET NODE_ENV=dev && tsc && node ./dist/server.js",
+    "dev:server": "tsc && NODE_ENV=dev node ./dist/server.js",
+    "prod:server": "tsc && NODE_ENV=prod node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mysql2": "^2.2.5",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
