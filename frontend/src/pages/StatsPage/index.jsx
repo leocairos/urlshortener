@@ -13,13 +13,14 @@ import Header from '../../components/Header';
 import Adsense from '../../components/Adsense';
 import { StatsBox, StatsBoxTitle, StatsContainer, StatsRow } from './styles';
 import ShortenerService from '../../services/shortenerService';
+import vars from '../../configs/vars'
 
 class StatsPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      isLoading: false,
+      // isLoading: false,
       shortenerURL: {},
       errorMessage: '',
     };
@@ -38,10 +39,16 @@ class StatsPage extends React.Component {
 
       shortenerURL.relativeDate = relativeDate;
 
-      this.setState({ isLoading: false, shortenerURL })
+      this.setState({
+        // isLoading: false,
+        shortenerURL
+      })
 
     } catch (error) {
-      this.setState({ isLoading: false, errorMessage: 'Ops, URL não encontrada.' })
+      this.setState({
+        // isLoading: false,
+        errorMessage: 'Ops, URL não encontrada.'
+      })
     }
   }
 
@@ -66,13 +73,12 @@ class StatsPage extends React.Component {
             <StatsContainer className="text-center">
               <p>
                 <strong>
-                  https://rdlsc.com/
-{shortenerURL.code}
+                  {vars.HOST_APP + shortenerURL.code}
                 </strong>
               </p>
               <p>
                 Redireciona para:
-<br />
+                <br />
                 {shortenerURL.url}
               </p>
               <StatsRow>

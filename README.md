@@ -2,7 +2,9 @@
 
 URL Shortener Project (Backend and Frontend)
 
-Demo in http://rdlsc.ml
+API Demo in http://api.rdlsc.ml:8001
+
+Web Demo in http://rdlsc.ml
 
 ## To run
 
@@ -27,3 +29,10 @@ Demo in http://rdlsc.ml
 
 * https://www.freenom.com/
   * Free domain
+
+* PM2
+  * pm2 start ./dist/server.js --env prod --name urlshortener_api
+
+* Insomnia (https://insomnia.rest/)
+  * Design, debug, and test APIs like a human, not a robot.
+  * File avaliable in this repository (insomnia.json)

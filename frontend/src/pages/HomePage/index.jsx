@@ -14,6 +14,7 @@ import Header from '../../components/Header';
 import Adsense from '../../components/Adsense';
 import { ContentContainer, Form } from './styles';
 import ShortenerService from '../../services/shortenerService';
+import vars from '../../configs/vars';
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -54,11 +55,16 @@ class HomePage extends React.Component {
     }
   }
 
+  statisticsFollow = (code) => {
+    return `${vars.HOST_APP}${code}/stats`
+  }
+
   copyToClipboard() {
     const element = this.inputURL;
     element.select();
     document.execCommand('copy');
   }
+
 
   render() {
     const { isLoading, errorMessage, code } = this.state;
@@ -88,7 +94,7 @@ class HomePage extends React.Component {
                     <InputGroup className="mb-3">
                       <FormControl
                         autoFocus
-                        defaultValue={`https://rdlsc.com/${code}`}
+                        defaultValue={`${vars.HOST_APP}${code}`}
                         // eslint-disable-next-line no-return-assign
                         ref={(input) => this.inputURL = input}
                       />
@@ -102,9 +108,11 @@ class HomePage extends React.Component {
                       </InputGroup.Append>
                     </InputGroup>
                     <p>
-                      Para acompanhar as estatística, acesse https://rdlsc.com/
-                      {code}
-                      /stats
+                      Para acompanhar as estatística, acesse
+                      {' '}
+                      <a href={this.statisticsFollow(code)}>
+                        {this.statisticsFollow(code)}
+                      </a>
                     </p>
                   </>
                 )

@@ -19,8 +19,8 @@ class RedirectPage extends React.Component {
     super(props);
 
     this.state = {
-      isLoading: false,
-      url: '',
+      // isLoading: false,
+      // url: '',
       errorMessage: '',
     };
   }
@@ -38,10 +38,10 @@ class RedirectPage extends React.Component {
       } else {
         (window.location = url)
       }
-      this.setState({ isLoading: false });
+      // this.setState({ isLoading: false });
     } catch (error) {
       this.setState({
-        isLoading: false,
+        // isLoading: false,
         errorMessage: 'Ops, URL não encontrada.',
       });
     }

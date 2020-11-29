@@ -1,8 +1,9 @@
 import baseAPI from './api';
+import vars from '../configs/vars';
 
 class ShortenerService {
   constructor() {
-    this.api = baseAPI('http://localhost:8001/');
+    this.api = baseAPI(vars.API_BASE);
   }
 
   async getLink(code) {
