@@ -13,8 +13,8 @@ export const StatsRow = styled.div`
 `;
 
 export const StatsBox = styled.div`
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 35%;
+  max-width: 35%;
   padding: 2rem;
   border: solid 1px #ccc;
   border-radius: 0.25rem;
