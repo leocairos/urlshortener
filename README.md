@@ -4,7 +4,7 @@ URL Shortener Project (Backend and Frontend)
 
 API Demo in http://api.rdlsc.ml:8001
 
-Web Demo in http://rdlsc.ml
+Web Demo in http://www.rdlsc.ml
 
 ## To run
 
