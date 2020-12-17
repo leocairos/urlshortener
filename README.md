@@ -4,7 +4,7 @@ URL Shortener Project (Backend and Frontend)
 
 API Demo in http://api.rdlsc.ml:8001
 
-Web Demo in http:/bitlnk.tk
+Web Demo in http://bitlnk.tk
 
 ## To run
 
@@ -21,7 +21,7 @@ Web Demo in http:/bitlnk.tk
   * yarn prod:server (dev in Unix)
 
 * Frontend
-  * cd backend 
+  * cd frontend 
   * yarn (install packages)
   * yarn start
 
