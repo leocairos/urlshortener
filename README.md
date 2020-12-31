@@ -2,10 +2,6 @@
 
 URL Shortener Project (Backend and Frontend)
 
-API Demo in http://api.rdlsc.ml:8001
-
-Web Demo in http://bitlnk.tk
-
 ## To run
 
   * git clone git@github.com:leocairos/urlshortener.git
@@ -16,9 +12,8 @@ Web Demo in http://bitlnk.tk
   * yarn (install packages)
   * Create database
   * Configure database in src/database.ts
-  * yarn dev:server (dev in Unix)
-  * yarn dev:serverwin (dev in Windows)
-  * yarn prod:server (dev in Unix)
+  * yarn dev:server  
+  * yarn prod:server
 
 * Frontend
   * cd frontend 
